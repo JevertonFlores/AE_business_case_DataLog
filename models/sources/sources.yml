@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: seeds
+    description: Data coming from .csv files with data provides ERP.
+
+
+    tables:
+      - name: datalog_BaseDados
+        description: This is a replica of the customers file.csv.
+        
+      - name: datalog_CadastroVeiculo
+        description: This is a replica of the employees file.csv.
+
+      - name: datalog_CustosMensais
+        description: This is a replica of the employees file.csv.
+
+      - name: datalog_MotivosOcorrencia
+        description: This is a replica of the employees file.csv.

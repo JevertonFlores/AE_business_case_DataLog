@@ -2,8 +2,9 @@ WITH source AS (
     SELECT
         *
     FROM {{ source('staging', 'custos_mensais') }}
-)
+),
 
+custos_intermediate AS (
 SELECT
     id_veiculo,
     TO_DATE('1/' || data, 'DD/MM/YYYY')::DATE as data,
@@ -13,3 +14,28 @@ SELECT
     CAST(TRIM(REPLACE(REPLACE(vlr_abastecimento, 'R$', ''), ',', '')) AS NUMERIC) AS vlr_abastecimento,
     CAST(TRIM(REPLACE(REPLACE(custo_total, 'R$', ''), ',', '')) AS NUMERIC) AS custo_total
 FROM source
+),
+
+veiculos AS (
+    SELECT 
+        *
+    FROM {{ ref('dim_veiculos') }}
+),
+
+treated AS (
+    SELECT
+        TO_CHAR(c.data, 'YYYYMMDD')::INT AS sk_datetime
+        ,ve.sk_veiculo
+        ,c.kilometros_percorridos
+        ,c.custo_fixo
+        ,c.vlr_manutencao
+        ,c.vlr_abastecimento
+        ,c.custo_total
+    FROM custos_intermediate c 
+    LEFT JOIN veiculos ve 
+        ON c.id_veiculo = ve.id_veiculo
+)
+
+SELECT
+*
+FROM treated

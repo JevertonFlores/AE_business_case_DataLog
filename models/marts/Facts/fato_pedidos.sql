@@ -33,6 +33,7 @@ vendas_treated AS (
         ,v.data_cte
         ,v.data_prevista
         ,v.data_entrega
+        ,v.data_entrega - v.data_pedido AS OCT
         ,CASE 
             WHEN v.data_entrega > v.data_prevista THEN 0
             ELSE 1

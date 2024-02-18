@@ -5,7 +5,7 @@ WITH source AS (
 )
 
 SELECT
-	"Data" AS data
+	"Data"::DATE AS data
 	,"ID_Veiculo" AS id_veiculo
 	,"KM Percorridos" AS km_percorridos
 	,"ValorAbastecimento" AS vlr_abastecimento

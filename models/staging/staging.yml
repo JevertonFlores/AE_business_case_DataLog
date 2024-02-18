@@ -6,17 +6,17 @@ sources:
 
 
     tables:
-      - name: base_dados
+      - name: stg_base_dados
         description: Tabela com os registros das vendas.
         
-      - name: custos_mensais
+      - name: stg_custos_mensais
         description: Tabela com os registros dos custos.
 
-      - name: cadastro_veiculos
+      - name: stg_cadastro_veiculos
         description: Tabela com o cadastro dos veículos da empresa. 
 
-      - name: motivos_ocorrencias
+      - name: stg_motivos_ocorrencias
         description: Tabela com o cadastro de motivos de ocorrências.
 
-      - name: regioes
+      - name: stg_regioes
         description: Tabela com o cadastro das regiões de destino.

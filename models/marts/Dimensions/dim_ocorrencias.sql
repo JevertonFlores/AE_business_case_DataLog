@@ -1,7 +1,7 @@
 WITH source AS (
     SELECT
         *
-    FROM {{ source('staging', 'motivos_ocorrencias') }}
+    FROM {{ ref('stg_motivos_ocorrencias') }}
 ),
 
 treated AS (

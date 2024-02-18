@@ -1,7 +1,7 @@
 WITH source AS (
     SELECT DISTINCT
         *
-    FROM {{ source('staging', 'cadastro_veiculos') }}
+    FROM {{ ref('stg_cadastro_veiculos') }}
 ),
 
 treated AS(

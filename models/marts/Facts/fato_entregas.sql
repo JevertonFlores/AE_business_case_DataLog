@@ -1,7 +1,7 @@
 WITH source AS (
     SELECT
         *
-    FROM {{ ref('base_dados') }}
+    FROM {{ ref('stg_base_dados') }}
 ),
 
 regioes AS (

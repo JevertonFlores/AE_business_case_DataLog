@@ -1,7 +1,7 @@
 WITH source AS (
     SELECT
         *
-    FROM {{ source('seeds', 'datalog_BaseDados') }}
+    FROM {{ ref('datalog_BaseDados') }}
 )
 
 SELECT

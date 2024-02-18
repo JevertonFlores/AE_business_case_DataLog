@@ -1,7 +1,7 @@
 WITH source AS (
     SELECT
         *
-    FROM {{ source('staging', 'regioes') }}
+    FROM {{ ref('stg_regioes') }}
 ),
 
 treated AS (

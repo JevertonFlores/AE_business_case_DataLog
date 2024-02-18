@@ -1,7 +1,7 @@
 WITH source AS (
     SELECT
         *
-    FROM {{ source('staging', 'custos_mensais') }}
+    FROM {{ ref('stg_custos_mensais') }}
 ),
 
 custos_intermediate AS (

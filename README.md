@@ -60,9 +60,8 @@ O dashboard pode ser acessado pelo link -->
 <a href="https://app.powerbi.com/view?r=eyJrIjoiZDQ1NzY2MmYtMjJkOC00YTU0LTlhYzAtNGRjZjA1YmNiMWU5IiwidCI6ImRlYzg2NmVlLWFkZjAtNGIxZC1hMWJhLTdhODZjODY0OTRiZCJ9">- DataLog - Indicadores de Desempenho
 
 ### Telas do dashboard:
-Custos:
-![image](https://github.com/JevertonFlores/AE_business_case_DataLog/assets/36814309/5f5c2c70-dd04-4b71-ad94-b6a59e8b417e)
 
-Entregas:
+![image](https://github.com/JevertonFlores/AE_business_case_DataLog/assets/36814309/5f5c2c70-dd04-4b71-ad94-b6a59e8b417e)
+-----------------------------
 ![image](https://github.com/JevertonFlores/AE_business_case_DataLog/assets/36814309/012969c4-571b-4ce9-b2ae-fbbf3262253f)
 

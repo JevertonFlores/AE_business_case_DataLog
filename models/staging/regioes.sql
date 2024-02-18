@@ -1,18 +1,17 @@
 WITH source AS (
     SELECT
         *
-    FROM {{ source('staging', 'base_dados') }}
+    FROM {{ source('seeds', 'datalog_BaseDados') }}
 ),
 
 intemediate AS (
     SELECT DISTINCT
-        destino
+        "Destino" AS destino
     FROM source
 ),
 
 treated AS (
     SELECT
-        --ROW_NUMBER() OVER (ORDER BY destino) AS sk_destino
         destino
         ,SPLIT_PART(destino, '/', 1) AS regiao
         ,SPLIT_PART(SPLIT_PART(destino, '/', 2), '*', 1) AS uf

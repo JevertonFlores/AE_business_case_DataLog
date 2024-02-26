@@ -61,9 +61,9 @@ O dashboard pode ser acessado pelo link -->
 
 ### Telas do dashboard:
 
-![image](https://github.com/JevertonFlores/AE_business_case_DataLog/assets/36814309/4beafa17-e5ae-45ff-9e7a-d8b2301f9079)
+![image](https://github.com/JevertonFlores/AE_business_case_DataLog_IndicadoresDesempenho/assets/36814309/7bee8f88-3cd7-455d-a71b-5c708b4b4365)
 
 -----------------------------
-![image](https://github.com/JevertonFlores/AE_business_case_DataLog/assets/36814309/32546b36-258a-4646-8a6b-fb703e5bac3d)
+![image](https://github.com/JevertonFlores/AE_business_case_DataLog_IndicadoresDesempenho/assets/36814309/9a41161b-eedb-424f-ac94-0cd14e7efe20)
 
 
